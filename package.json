@@ -7,23 +7,17 @@
     "gpt3": "./dist/bin/index.js"
   },
   "scripts": {
+    "clean": "git clean -X -f && npm i",
     "test": "jest",
     "build": "tsc",
-    "lint": "eslint . --ext .ts,.js,.md -c .eslintrc.json --fix"
+    "lint": "eslint . --ext .ts,.js,.md -c .eslintrc.json --fix",
+    "prepublish": "npm run clean && npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/poteat/gpt3-cli.git"
   },
-  "keywords": [
-    "gpt",
-    "ai",
-    "machine",
-    "learning",
-    "agi",
-    "completion",
-    "text"
-  ],
+  "keywords": ["gpt", "ai", "machine", "learning", "agi", "completion", "text"],
   "author": "Michael Poteat <me@mpote.at>",
   "license": "MIT",
   "bugs": {
