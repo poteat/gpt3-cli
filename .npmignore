@@ -1,0 +1,14 @@
+.gitignore
+.eslintingore
+.eslintrc.json
+jest.config.json
+tsconfig.json
+webpack.config.js
+tsconfig.tsbuildinfo
+.vscode
+/src/
+docs
+test
+dist/src/sandbox
+dist/test
+coverage
