@@ -1,0 +1,63 @@
+{
+  "name": "gpt3",
+  "version": "1.0.0",
+  "description": "A simple CLI tool to interface with OpenAI's beta API",
+  "main": "index.js",
+  "bin": {
+    "gpt3": "./src/bin/index.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "lint": "eslint . --ext .ts,.js,.md -c .eslintrc.json --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/poteat/gpt3-cli.git"
+  },
+  "keywords": ["gpt", "ai", "machine", "learning", "agi", "completion", "text"],
+  "author": "Michael Poteat <me@mpote.at>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/poteat/gpt3-cli/issues"
+  },
+  "homepage": "https://github.com/poteat/gpt3-cli#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.4",
+    "@typescript-eslint/eslint-plugin": "^3.6.1",
+    "@typescript-eslint/parser": "^3.6.1",
+    "eslint": "^7.4.0",
+    "eslint-config-adjunct": "^4.8.4",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-array-func": "^3.1.6",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-html": "^6.0.2",
+    "eslint-plugin-jest": "^23.18.0",
+    "eslint-plugin-jest-async": "^1.0.3",
+    "eslint-plugin-json": "^2.1.1",
+    "eslint-plugin-markdown": "^1.0.2",
+    "eslint-plugin-no-constructor-bind": "^2.0.2",
+    "eslint-plugin-no-secrets": "^0.6.8",
+    "eslint-plugin-no-unsanitized": "^3.1.2",
+    "eslint-plugin-no-use-extend-native": "^0.5.0",
+    "eslint-plugin-optimize-regex": "^1.2.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-scanjs-rules": "^0.2.1",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-simple-import-sort": "^5.0.3",
+    "eslint-plugin-sonarjs": "^0.5.0",
+    "eslint-plugin-switch-case": "^1.1.2",
+    "eslint-plugin-unicorn": "^20.1.0",
+    "jest": "^26.1.0",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.1.2",
+    "ts-loader": "^8.0.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "yargs": "^15.4.1"
+  }
+}

@@ -1,0 +1,14 @@
+node_modules
+dist
+tsconfig.tsbuildinfo
+*.d.ts.map
+coverage
+*.js.map
+lib
+*.tsbuildinfo
+*.log
+package-lock.json
+*.js
+!jest.config.js
+yarn.lock
+docs/typedoc
