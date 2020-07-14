@@ -13,7 +13,7 @@ if (typeof prompt !== "string") {
 } else {
   (async () => {
     const completion = await getCompletion(prompt);
-    console.log(completion);
+    console.log(`\n${completion}`);
   })().catch((error) => {
     throw error;
   });
