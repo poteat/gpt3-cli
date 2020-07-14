@@ -1,6 +1,6 @@
 {
   "name": "gpt3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple CLI tool to interface with OpenAI's beta API",
   "main": "index.js",
   "bin": {
@@ -15,7 +15,15 @@
     "type": "git",
     "url": "git+ssh://git@github.com/poteat/gpt3-cli.git"
   },
-  "keywords": ["gpt", "ai", "machine", "learning", "agi", "completion", "text"],
+  "keywords": [
+    "gpt",
+    "ai",
+    "machine",
+    "learning",
+    "agi",
+    "completion",
+    "text"
+  ],
   "author": "Michael Poteat <me@mpote.at>",
   "license": "MIT",
   "bugs": {
