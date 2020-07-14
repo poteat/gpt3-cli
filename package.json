@@ -1,6 +1,6 @@
 {
   "name": "gpt3",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple CLI tool to interface with OpenAI's beta API",
   "main": "index.js",
   "bin": {
