@@ -12,3 +12,4 @@ package-lock.json
 !jest.config.js
 yarn.lock
 docs/typedoc
+*.tgz

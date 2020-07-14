@@ -1,14 +1,15 @@
 .gitignore
-.eslintingore
 .eslintrc.json
+.eslintingore
 jest.config.json
 tsconfig.json
 webpack.config.js
 tsconfig.tsbuildinfo
 .vscode
-/src/
+src/**
 docs
 test
 dist/src/sandbox
 dist/test
 coverage
+*.tgz
