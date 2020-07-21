@@ -3,6 +3,7 @@ import { argv } from "yargs";
 
 import { getCompletion } from "../utility/completion/getCompletion";
 import { checkForCredentials } from "../utility/debug/checkForCredentials";
+import { removeLastSentence } from "../utility/string/removeLastSentence";
 import { replaceNewlineEscapes } from "../utility/string/replaceNewlineEscapes";
 
 checkForCredentials();
@@ -14,7 +15,9 @@ if (typeof prompt !== "string") {
 } else {
   (async () => {
     const completion = await getCompletion(prompt);
-    console.log(`\n${completion}`);
+    const cleaned = removeLastSentence(prompt + completion);
+
+    console.log(`\n${cleaned}`);
   })().catch((error) => {
     throw error;
   });
