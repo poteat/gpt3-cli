@@ -33,6 +33,7 @@
   "homepage": "https://github.com/poteat/gpt3-cli#readme",
   "devDependencies": {
     "@types/jest": "^26.0.4",
+    "@types/lodash": "^4.14.157",
     "@typescript-eslint/eslint-plugin": "^3.6.1",
     "@typescript-eslint/parser": "^3.6.1",
     "eslint": "^7.4.0",
@@ -67,6 +68,7 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "lodash": "^4.17.19",
     "yargs": "^15.4.1"
   }
 }
