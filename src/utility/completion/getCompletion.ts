@@ -7,14 +7,28 @@ import { removeLastSentence } from "../string/removeLastSentence";
 import { completionKeyTranslations } from "./literals/completionKeyTranslations";
 import { CompletionOptions } from "./types/CompletionOptions";
 
+export type AuthOptions = {
+  openAIKey: string;
+  openAISecretKey: string;
+};
+
 export async function getCompletion(
   prompt: string,
-  options: Partial<CompletionOptions> = {}
+  options: Partial<CompletionOptions> = {},
+  authOptions: Partial<AuthOptions> = {}
 ) {
   const translatedOptions = mapKeys(
     options,
     (_x, key) => completionKeyTranslations[key as keyof CompletionOptions]
   );
+
+  const authKey = authOptions?.openAISecretKey ?? openAIConfiguration.secretKey;
+
+  if (!authKey) {
+    throw new TypeError(
+      "MISSING SECRET KEY: Either specify secret key in environment, or pass in as auth parameter"
+    );
+  }
 
   const completionResult = (
     await axios.post(
@@ -26,7 +40,7 @@ export async function getCompletion(
       {
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${openAIConfiguration.secretKey}`,
+          Authorization: `Bearer ${authKey}`,
         },
       }
     )
