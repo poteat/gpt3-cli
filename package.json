@@ -2,7 +2,7 @@
   "name": "gpt3",
   "version": "1.0.5",
   "description": "A simple CLI tool to interface with OpenAI's beta API",
-  "main": "index.js",
+  "main": "dist/index.js",
   "bin": {
     "gpt3": "./dist/bin/index.js"
   },
